@@ -1,2 +1,2 @@
-# alafyte.github.io
+# alafyte.github.io/home.html
 Jewellery store website
