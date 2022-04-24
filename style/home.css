@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,8 @@ body {
   overflow-x: hidden;
 }
 
-/*              Шапка сайта              */
+/*          Шапка сайта           */
+
 .header {
   background-color: #fff;
   display: -webkit-box;
@@ -37,6 +37,7 @@ body {
 }
 
 /*-----------Mobile Nav-----------*/
+
 @media (min-width: 1000px) {
   .nav-mobile, .hamb, #side-menu {
     display: none;
@@ -48,6 +49,7 @@ body {
 }
 
 /*-------Hamburger-------*/
+
 .hamb {
   cursor: pointer;
   position: fixed;
@@ -128,6 +130,7 @@ body {
 }
 
 /*-------------------------------*/
+
 .nav-mobile {
   width: 300px;
   min-width: 300px;
@@ -324,6 +327,7 @@ body {
 }
 
 /*-----------Main Nav-----------*/
+
 @media (max-width: 1000px) {
   .nav__link {
     display: none;
@@ -336,6 +340,7 @@ body {
   font-size: 20px;
   margin-left: 80px;
   margin-top: 30px;
+  display:none;
 }
 
 .nav_links {
@@ -389,6 +394,7 @@ body {
 }
 
 /*-------------Строка поиска-------------*/
+
 @media (max-width: 1100px) {
   .cont2 .search1 {
     display: none;
@@ -396,9 +402,10 @@ body {
 }
 
 /*----------Search Mobile------------*/
+
 .search-box {
   position: absolute;
-  left: 51vw;
+  left: 48vw;
   top: 8px;
   background-color: #2C3441;
   height: 39px;
@@ -412,12 +419,6 @@ body {
 .search-box:hover {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-}
-
-@media (min-width: 1000px) {
-  .search-box {
-    display: none;
-  }
 }
 
 .search-box:hover > input {
@@ -471,22 +472,11 @@ input:focus {
 }
 
 /*-----------------------------------*/
-.search_field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (max-width: 1100px) {
-  .search_field {
-    display: none;
-  }
-}
 
 .search1 {
   margin-top: 15px;
   width: 295px;
-  height: 40px;
+  height: 30px;
   position: relative;
   padding-left: 6px;
   font-size: 18px;
@@ -498,9 +488,6 @@ input:focus {
 
 .butsearch {
   position: absolute;
-  padding: 5px;
-  width: 40px;
-  height: 40px;
   margin-top: 4px;
   margin-left: 262px;
 }
@@ -514,11 +501,9 @@ input:focus {
           align-items: center;
 }
 
-/*------------------------------*/
 .icon1 {
   position: relative;
   margin-left: 50px;
-  top: 15px;
   left: -10px;
   width: 40px;
   height: 40px;
@@ -528,7 +513,10 @@ input:focus {
           filter: drop-shadow(-3px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 9px;
   z-index: 1000;
+  @media (max-width:1100px){
+    display:none;
 }
+} 
 
 .icon1 ul {
   position: absolute;
@@ -600,7 +588,7 @@ input:focus {
   .image1 {
     width: 300px;
     height: 300px;
-    left: -50vh;
+    left: 0vh;
     top: 30%;
     opacity: 0.8;
   }
@@ -623,7 +611,7 @@ input:focus {
 
 @media (max-width: 700px) {
   .image2 {
-    margin-left: -80vh;
+    margin-left: -56vh;
   }
 }
 
@@ -708,7 +696,6 @@ input:focus {
 
 /*-------------Second section with cards-------------*/
 #sec2 {
-  width: 100%;
   margin-top: 3.5vh;
   padding-bottom: 5vh;
 }
@@ -1389,12 +1376,6 @@ input:focus {
 }
 
 /*--------------------------*/
-@media (min-width: 320px) and (max-width: 700px) {
-  .row {
-    width: 100%;
-  }
-}
-
 @media (min-width: 1000px) {
   .row {
     margin-bottom: 50px;
@@ -1412,7 +1393,7 @@ input:focus {
   background: linear-gradient(109.61deg, rgba(69, 80, 82, 0.5) 0%, rgba(98, 236, 255, 0.165) 39.06%, rgba(40, 229, 255, 0.13) 67.19%, rgba(0, 0, 0, 0.305) 100%);
   height: 850px;
   background: linear-gradient(109.61deg, rgba(69, 80, 82, 0.5) 0%, rgba(98, 236, 255, 0.165) 39.06%, rgba(40, 229, 255, 0.13) 67.19%, rgba(0, 0, 0, 0.305) 100%);
-  background-image: url(/images/fon_sec3.png);
+  background-image: url(../images/fon_sec3.png);
 }
 
 .foo_main1 {
@@ -1469,6 +1450,7 @@ input:focus {
 @media (max-width: 700px) {
   .line {
     width: 80%;
+    margin-left: 10%;
   }
 }
 
@@ -1557,8 +1539,7 @@ input:focus {
 
 textarea {
   display: inline-block;
-  padding-top: 16px;
-  padding-left: 10px;
+  padding-top: 11px;
   font-size: 17px;
   position: absolute;
   top: 400px;
@@ -1566,15 +1547,16 @@ textarea {
   border-radius: 10px;
   border: none;
   width: 490px;
-  max-width: 90%;
+  max-width: 490px;
   min-height: 60px;
   max-height: 100px;
 }
 
 @media (max-width: 700px) {
   textarea {
+    max-width: 90%;
     min-height: 60px;
-    max-height: 60px;
+    max-height: 200px;
   }
 }
 
@@ -1633,7 +1615,7 @@ textarea {
   position: absolute;
   width: 100%;
   margin-bottom: 0;
-  background-image: url(/images/backfoto.png);
+  background-image: url(../images/backfoto.png);
 }
 
 .foo_nav {
@@ -1890,4 +1872,3 @@ textarea {
   font-size: 22px;
   text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
 }
-/*# sourceMappingURL=home.css.map */
