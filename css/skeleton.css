@@ -51,7 +51,7 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 90%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -155,14 +155,6 @@ p {
   margin-top: 0; }
 
 
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
- 
-
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -236,8 +228,9 @@ input[type="password"],
 textarea,
 select {
   height: 38px;
-  /*padding: 6px 10px;*/ /* The 6px vertically centers text on FF, ignored by Webkit */
-  border: none;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -287,10 +280,6 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-  list-style: circle inside; }
-ol {
-  list-style: decimal inside; }
 ol, ul {
   padding-left: 0;
   margin-top: 0; }
@@ -325,14 +314,14 @@ pre > code {
 th,
 td {
   padding: 12px 15px;
-  /*text-align: left;*/
-  /*border-bottom: 1px solid #E1E1E1;*/ }
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
 th:first-child,
 td:first-child {
-  padding-left: 2%; }
+  padding-left: 0; }
 th:last-child,
 td:last-child {
-  padding-right: 2%; }
+  padding-right: 0; }
 
 
 /* Spacing
@@ -354,7 +343,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 1.6rem; }
+  margin-bottom: 2.5rem; }
 
 
 /* Utilities
