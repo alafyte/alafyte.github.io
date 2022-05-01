@@ -42,10 +42,8 @@
   }
 }
 
-.navigation-first ul li:hover, .navigation-first ul li:focus {
-  display: block;
+.navigation-first ul li a:hover, .navigation-first ul li a:focus {
   text-decoration: underline;
-  color: #EED1D1;
 }
 
 .navigation-second {

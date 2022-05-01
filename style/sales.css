@@ -18,13 +18,13 @@ h3 {
   text-align: center;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 557px) {
   .mobile {
     display: none;
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 556px) {
   .desktop {
     display: none;
   }
