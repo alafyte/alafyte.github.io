@@ -1,0 +1,29 @@
+p {
+    font-size: x-large;
+    text-align: justify;
+    margin: 0;
+    @media (max-width: 999px) {
+     font-size: 16pt;
+    }
+}
+#sale3 {
+    border: none;
+}
+h3 {
+    text-align: center;
+}
+.mobile {
+    @media (min-width: 1000px) {
+        display: none;
+    }
+}
+.desktop {
+    @media (max-width: 999px) {
+        display: none;
+    }
+}
+
+.sale {
+   border-bottom: 1px solid gray;
+   margin-bottom: 3%;
+}

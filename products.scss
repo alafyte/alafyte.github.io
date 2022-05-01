@@ -1,0 +1,104 @@
+.product-image {
+    max-width: 100%;
+    max-height: 298px;
+    width: auto;
+    height: auto;
+    border: 3px outset gray;
+}
+#product-image {
+    @media (max-width: 560px) {
+        display: table;
+        text-align: center;
+       }
+}
+
+.breadcrumps {
+    li {
+        font-size: x-large;
+        display: inline;
+        list-style: none;
+        background-image: url(arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 7px 55%;
+        padding-left: 25px;
+        margin: 0;
+        @media (max-width: 560px) {
+            display: none;
+           }
+        @media (min-width: 560px) and (max-width: 999px){
+            font-size: 15pt;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+
+    margin-bottom: 0;
+}
+.description {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: x-large;
+    border-bottom: 1px dotted rgba($color: #000000, $alpha: 0.3);
+    @media (max-width: 999px) {
+        font-size: 14pt;
+       }
+}
+.item-number {
+    font-size: medium;
+    color: rgba($color: #000000, $alpha: 0.3);
+    padding-bottom: 2%
+}
+.ring-size {
+   font-size: x-large;
+   border: none;
+   display: block;
+   margin-top: 2%;
+   margin-bottom: 9%;
+   @media (max-width: 999px) {
+    font-size: 14pt;
+   }
+   @media (max-width: 560px) {
+    margin-bottom: 13%;
+   }
+}
+.size-desc {
+    float: left;
+    margin-right: 7%;
+}
+.size {
+    float: left;
+    margin-right: 7%;
+    width: 10%;
+    font-weight: bold;
+    text-align: center;
+    background-color: #efebeb;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        background-color: #000000;
+        color: #efebeb;
+    }
+}
+.price {
+    font-size: xx-large;
+    color: darkred;
+    font-weight: 900;
+    margin-right: 3%;
+}
+.old-price {
+    color: rgba($color: darkred, $alpha: 0.5);
+    text-decoration-line: line-through;
+    font-size: 18pt;
+    @media (min-width: 560px) and (max-width: 999px) {
+        font-size: 16pt;
+       }
+}
+.add-description {
+    font-size: x-large;
+    text-align: justify;
+    hyphens: auto;
+    margin-top: 2%;
+}
