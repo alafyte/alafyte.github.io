@@ -1,0 +1,15 @@
+input {
+    width: 20%;
+}
+#send {
+    margin-bottom: 5%;
+}
+#ip-classes {
+    width: 40%;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
